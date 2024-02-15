@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heriyana | Konversi Suhu</title>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="image">
+            <a href="index.html">
+                <img src="image/image_1.png" alt="Logo" width="80" height="50">
+                <b> Mini Project Demo "Konversi Suhu"</b>
+            </a>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="showResult()">Lihat Hasil</button>
+            <button class="btn" onclick="showFormula()">Lihat Rumus</button>
+        </div>
+    </nav>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Konversi Suhu</h2>
+            <div class="form">
+                <label for="celsius"><b>Celsius</b></label>
+                <div class="input">
+                    <input type="text" id="celsius" pattern="[-\d]+" onkeypress="return isNumberKey(event)">
+                </div>
+                <button onclick="konversiBtn()">Konversi</button>
+                <button onclick="resetBtn()">Reset</button>
+                <button onclick="reverseBtn()">Reverse</button>
+                <p id="error-msg" style="color: red; display: none;">Silakan isi nilai dalam input Celsius terlebih dahulu.</p>
+            </div>
+            <div class="input">
+                <label for="fahrenheit"><b>Fahrenheit</b></label>
+                <input type="text" id="fahrenheit" disabled />
+            </div>
+
+            <div id="result" style="display: none">
+                <h1>Hasil: <span id="resultValue"></span></h1>
+            </div>
+
+            <div id="formula" style="display: none">
+                <h1>Formula:</h1>
+                <h3>Fahrenheit = (Celsius * 9/5) + 32</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

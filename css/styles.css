@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #959aff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* navbar */
+nav {
+    background-color: #213af4;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    padding-right: 20px;
+    display: flex;
+}
+
+.btn {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+}
+
+.image a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.image b {
+    margin-left: 10px;
+}
+
+/* halaman input */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    margin-top: -40px;
+    
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: blue;
+    font-size: 30px;
+}
+
+.card button {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 30px;
+}
+
+.card button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.card button:hover {
+    background-color: #959aff;
+}
+
+.form label {
+    margin-right: 370px;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.input label {
+    margin-right: 340px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: blue;
+    font-size: 25px;
+}
